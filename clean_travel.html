@@ -234,16 +234,18 @@
       This year marks the maiden year of this innovative programme. The first trees were donated by Eco Safaris Namibia (85 trees) and ASCO Car Hire (22 trees).
       
       Mr Rudolf Matengu, principal at Augustineum Secondary School was extremely excited about the tree planting programme as the school aims to provide extra food and nutrition to their boarding school that has been affected by funding cuts. Mr Matengu also pointed out that everyone should participate to achieve the UN sustainable development goals which include climate action. The school is also hoping to use this opportunity to attract sponsors for their garden and agricultural department which are in urgent need for irrigation, tools and gardening materials.</p>
-      <br>
+      <span id="dots"></span><span id="more">
       <p>The mood at Moreson Special School can only be described as SPECIAL! The school is full of energy and the learners, teachers and principal are busy creating what can only be seen as an example to all Namibians. The Principal Mrs Anita Kreft has big plans for the school and planting trees and creating their own composting are only a few of them. Mrs Kreft reminded us that special needs and mentally impaired children and people also have the right to self-fulfilling occupations. Through vocational training such as brick laying, hospitality and agriculture learners can be integrated into mainstream society or continue working at Moreson and play a meaningful part in Namibia’s socio-economic activities.
       
       ASCO Car Hire director Mrs Mirela Kriess said in her address to Moreson School that the Clean Travel programme was a wonderful way for ASCO Car Hire and their clients to be able to contribute and give back something to the Namibian people and the environment.
       
       The Clean Travel programme is busy growing from a ‘seed’ that was planted just a year or so ago to potentially becoming a standard in the sustainable and eco tourism industry in Namibia.
       
-      For more information or how to join the Clean Travel programme please contact Felix Vallat at <a href="betterplace.org" class="col-links">cleantravel@tosco.org </a> or Donovan Wagner at <a href="info@eloolopermaculture.org" class="col-links"> info@eloolopermaculture.org</a>
-    </p>
+      For more information or how to join the Clean Travel programme please contact Felix Vallat at <a href="betterplace.org" class="col-links">cleantravel@tosco.org </a> or Donovan Wagner at <a href="info@eloolopermaculture.org" class="col-links"> info@eloolopermaculture.org</a></p></span>
+     
+      <a class="col-links" href="#" onclick="myFunction()" id="myBtn">Read More...</a>
           </div>
+         
         <div class="ratio ratio-16x9 col-md-6">
                 <iframe src="https://www.youtube.com/embed/N0QblwXyXvo" title="YouTube video" allowfullscreen ></iframe>
           </div>
@@ -260,18 +262,18 @@
             <h3>N<span>&#36;</span>320</h3>
             <p class="text-white">This fee includes growing, planting, educating and supporting host communities or schools to take care of your tree.</p>
             <br>
-            <button type="submit" class="btn  mb-3 buttonsnd">Donate Now</button>
+            <button type="submit" class="btn  mb-3 buttonsnd">Donate Now <i class="fas fa-hand-holding-usd"></i></button>
           </div>
           <div class="col-md sign-two signs">
             <h3>N<span>&#36;</span>5000</h3>
             <p class="text-white">​Please contact us to make a donation exceeding N$5000 or if you would like to make a corporate or private sponsorship in support of this programme. </p>
-            <button type="submit" class="btn  mb-3 buttonsnd">Donate Now</button>
+            <button type="submit" class="btn  mb-3 buttonsnd">Donate Now <i class="fas fa-hand-holding-usd"></i></button>
           </div>
           <div class="col-md  sign-three signs">
             <h3>N<span>&#36;</span><span></span>&#63; <span></span>&#63; <span>&#63; </span></h3>
            <p class="text-white"> Donate any amount to help fund our nursery, grow and plant lots of trees.</p>
            <br><br>
-           <button type="submit" class="btn  mb-3 buttonsnd">Donate Now</button>
+           <button type="submit" class="btn  mb-3 buttonsnd">Donate Now <i class="fas fa-hand-holding-usd"></i> </button>
           </div>
         </div>
       </div>
@@ -455,5 +457,23 @@
     <script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
     <script src="assets/plugins/slider/js/owl.carousel.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+ 
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+      
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more"; 
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less"; 
+          moreText.style.display = "inline";
+        }
+      }
+      </script>
 
 </html>

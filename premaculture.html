@@ -233,9 +233,9 @@
           <li><a>- Permaculture Worldwide Network and Permaculture Research Institute:</a></li>
           
       </ul>
-    <br>
+      <span id="dots"></span><span id="more">
       <p>These sister-sites by the Permaculture Research Institute are a great place to find the latest news and thought-provoking or inspiring blog-type articles on permaculture, including the latest permaculture research. Contributing writers are from all over the world and the “Global” section featuring permaculture projects on a pin-style map is one of its kind. Users may search projects by location, climate zone, and other features</p>
-<br>
+      
       <ul>
         <li> - Insight into a Permaculture designer’s world...</li>
         <li><a>- David Holmgren’s take on the primary concepts in permaculture, as one of the system’s original co-founders.</li>
@@ -245,15 +245,9 @@
         <li>- You can also just look on YOUTUBE, there are thousands of Permaculture videos or do some research on the world wide web!</li>
         
     </ul>
-    
+    </span>
+    <a class="col-links" href="#" onclick="myFunction()" id="myBtn">Read More...</a>>
   
-  
-  
-
-  
- 
- <br>
-
  
       </div>
      
@@ -405,4 +399,21 @@
     <script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
     <script src="assets/plugins/slider/js/owl.carousel.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
 </html>

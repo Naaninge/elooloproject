@@ -189,6 +189,7 @@ ul li{
   font-family: 'Dosis', sans-serif;
 
 }
+#more {display: none;}
 /*============================dropdown menu====================================*/
 
 .project-menu{
@@ -823,13 +824,16 @@ header .headwe-nav {
         padding-top: 33px;
         font-weight: 600;
         font-size: .8rem; }
+   
 
 /* =================== Causes Style Starts Here =================== */
 .causes {
   padding: 50px; }
   @media screen and (max-width: 940px) {
     .causes {
-      padding: 30px 10px; } }
+      padding: 30px 10px; }
+      
+     }
   .causes .cuses-row .causen-ccover {
     background-color: #FFF;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
