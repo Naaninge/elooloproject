@@ -13,8 +13,13 @@
   padding: 0px;
   list-style: none; }
 
+
+ 
 img {
   max-width: 100%; }
+  .donate-white{
+    color: white !important;
+  }
 
 a {
   text-decoration: none;
@@ -34,6 +39,9 @@ input,
 textarea {
   text-decoration: none;
   outline: none; }
+  .about-row .intro p{
+    text-align: justify;
+  }
 /*=====================farm section=============================*/
   .row-one{
     margin-top: 10px;
@@ -63,14 +71,17 @@ textarea {
   color: gray;
 }
 .col-links:hover{
-color:white;
-background: linear-gradient(to right, #42b773 0%, #a9dc56 100%);
+color:#a9dc56;
+
 }
 .seite-button{
   margin: 0 auto;
   background: linear-gradient(to right, #42b773 0%, #a9dc56 100%);
   color: white;
+  border-color: none;
+  border-radius: 2px;
  }
+
  
  .seite-button:hover{
   color: white;
@@ -91,6 +102,92 @@ background: linear-gradient(to right, #42b773 0%, #a9dc56 100%);
     text-decoration: none;
     color: #42b773;
    
+}
+
+
+.scontent {
+  background-color: rgb(0, 0, 0)transparent;
+  background-color:rgba(0,0,0,0.6);
+}
+/*============================clip===============================================*/
+.main-clip{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height:100vh;
+ /* background-color: #111;*/
+}
+.clip-con{
+  position:relative;
+  width:800px;
+  height:500px;
+  background:#222;
+}
+.clip-con .clip{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  transition:0.5s;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+  -ms-transition:0.5s;
+  -o-transition:0.5s;
+}
+.clip-con .clip.clip1{
+
+  background-size:cover;
+  clip-path: polygon(0 0, 50% 0, 0 100%, 0% 100%);
+}
+.clip-con .clip.clip2{
+ 
+  background-size:cover;
+  clip-path: polygon(50% 0, 100% 0, 50% 100%, 0 100%);
+}
+.clip-con .clip.clip3{
+ 
+  background-size:cover;
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 50% 100%);
+}
+.clip-con:hover .clip{
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+.clip-con .clip:hover{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.clip-con .clip .content{
+  position:absolute;
+  bottom:-100%;
+  left:0;
+  width:70%;
+  padding:20px;
+  background:#fff;
+  transition:0.5s;
+  opacity:0;
+}
+.clip-con .clip:hover .content{
+  bottom:0;
+  opacity:1;
+}
+/*===============================klipdachs====================================*/
+.klip-col{
+  padding-top: 50px;
+}
+
+ul li{
+  list-style-type: none;
+}
+.col-font{
+  font-family: 'Roboto', sans-serif;
+  font-weight:400;
+}
+.col-font p{
+  color: gray;
+}
+.col-font h3{
+  font-family: 'Dosis', sans-serif;
+
 }
 /*============================dropdown menu====================================*/
 
@@ -279,17 +376,101 @@ body {
     .page-nav ul li a {
       color:#fff; }
 
-    .page-nav ul li span {
+   /* .page-nav ul li span {
       color:#42b773; }
+      */
 
       /*========================clean travel===========================*/
-      .image{
-        object-fit: cover;
-        height:400px;
-       
+      .buttonsnd{
+  
+        border-radius: 0;
+       background-color: white;
+        color:black;
+        border-color: white;
+        border-color: none;
+        padding: 10px;
+        box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        
     }
+    
+    
+    .buttonsnd:hover{
+      background: linear-gradient(to right,#42b773 0%, #a9dc56 100%) ;
+        color: white;
+    }
+    .row-one h3{
+      font-family: 'Dosis', sans-serif;
+  }
+  .row-one{
+      margin-top: 10px;
+      margin-bottom: 10px;
+  
+  }
+ 
+  .row-one p{
+  color: gray;
+  }
+  .row-two{
+      margin-top: 5px;
+  }
+  .row-two p{
+      margin-top: 5px;
+      color: gray;
+  }
+  .price-section{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.sign-one{
+    background-color:  #42b773;
+}
+.sign-two{
+    background-color: #4caf50;
+}
+.sign-three{
+background-color: #80e27e;
+}
+.signs{
+  padding: 40px;
+  padding-right:5px;
+  /*border: 1px solid rgba(18, 18, 19,0.6);*/
+
+}
 
 
+.section-c h3{
+  font-family: 'Dosis', sans-serif;
+}
+.section-c p{
+  color: gray;
+}
+/*========================projects===========================================*/
+.part-one{
+  padding-top: 40px;
+  padding-bottom: 68px;
+  background: linear-gradient(to bottom, #42b773 0%, #a9dc56 100%);
+  text-align: center;
+  color: white;
+}
+.round{
+  border-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.part-one img{
+ width: 269px;
+ height: 269px;
+ object-fit: cover;
+}
+.causes h3{
+  color: black !important;
+}
+.signs p{
+  color: white;
+}
 
 /*=======================contact form=====================================*/
 .btun {
@@ -364,6 +545,18 @@ body {
   @media screen and (max-width: 575px) {
     .container {
       padding: 10px 15px; } }
+
+      /*=====================donate=========================*/
+      .donate-button{
+        padding: 10px !important;
+        width: 20% !important;
+      }
+      .donate-button :hover{
+        transform: translateX(10px) !important;
+      }
+      .ulright li a i:hover{
+          color: #0e0ee2;
+      }
 
 /* =================== Header Style Starts Here =================== */
 header .header-top {
@@ -815,8 +1008,8 @@ header .headwe-nav {
 
 .footer-above {
   padding:10px 70px 10px 30px;
-  background-color: #42b773;
-  color: #FFF;
+  background-color:white;
+  color:gray;
   text-align: center;
   text-decoration: underline;
   font-size: 1.5rem; }
@@ -829,7 +1022,7 @@ header .headwe-nav {
   
 .footer-above img{
    
-  max-width:100px;
+  max-width:50px;
   
   border-radius:50px;
   -webkit-border-radius:50px;
