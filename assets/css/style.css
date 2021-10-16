@@ -807,6 +807,12 @@ header .headwe-nav {
     line-height: 28px;
     margin-bottom: 15px; }
 
+ .about-pic{
+      width: 100%;
+      height: 75%;
+      object-fit: contain;
+    }
+
 /* =================== Header Style Starts Here =================== 888*/
 .services {
   padding: 50px;
