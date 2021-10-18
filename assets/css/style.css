@@ -29,6 +29,23 @@ a {
 a:hover {
   color: #444; }
 
+  /* edit */
+  .link{
+    color: white;
+    transition: all .5s;
+  }
+  .link:hover{
+    color: #444;
+  }
+
+  .image{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+  }
+  /* end */
+
 ul {
   margin-bottom: 0;
   padding-left: 0; }
