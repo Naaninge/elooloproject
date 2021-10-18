@@ -29,22 +29,6 @@ a {
 a:hover {
   color: #444; }
 
-  /* edit */
-  .link{
-    color: white;
-    transition: all .5s;
-  }
-  .link:hover{
-    color: #444;
-  }
-
-  .image{
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 30px;
-  }
-  /* end */
 
 ul {
   margin-bottom: 0;
@@ -230,14 +214,15 @@ ul li{
     font-family: 'Ubuntu', sans-serif;
     background-color: white;
     color: #42464f;
-    transform-origin: center;
-    animation: rotate 1.5s ease 1;
+    /*transform-origin: center;
+    animation: rotate 1.5s ease 1;*/
 }
 .dropdown-item:hover{
   background-color: #42b773;
   
   color: white;
 }
+/*
 @keyframes rotate{
     0%{transform: perspective(600px) rotatey(90deg); transform-origin:center;}
     100%{transform: perspective(600px) rotatey(0deg); transform-origin:center;}
@@ -252,7 +237,7 @@ ul li{
 }
 .dropdown-item:nth-last-of-type(3){
     animation-delay: 0.2s;
-}
+}*/
 .center {
   text-align: center; }
 
@@ -490,6 +475,9 @@ background-color: #80e27e;
   color: white;
 }
 
+
+ 
+ 
 /*=======================contact form=====================================*/
 .btun {
  
@@ -670,7 +658,7 @@ header .headwe-nav {
 
 .slider-captions {
   position: absolute;
-  bottom: 132px;
+  bottom: 150px;
   text-align: center; }
 
 @media screen and (max-width: 1050px) {
@@ -682,7 +670,8 @@ header .headwe-nav {
   float: none;
   margin: auto;}
   .slider-captions .slider-title {
-    font-size: 42px; } }
+    font-size: 42px;
+   } }
 @media screen and (max-width: 810px) {
   .slider-captions {
     bottom: 50px !important; }
@@ -696,7 +685,9 @@ header .headwe-nav {
   font-size: 66px;
   font-weight: 600;
   color: #fff;
-  letter-spacing: -3px; }
+  letter-spacing: -3px;
+
+ }
 
 .slider-text {
   margin-bottom: 20px;
@@ -778,7 +769,7 @@ header .headwe-nav {
   float: none;
   margin: auto; }
 
-/* =================== Header Style Starts Here =================== */
+/* =================== About us Style Starts Here =================== */
 .about-us {
   padding: 50px; }
   @media screen and (max-width: 940px) {
@@ -811,22 +802,33 @@ header .headwe-nav {
   .about-us .abut-detail h4 {
     margin-bottom: 20px; }
   .about-us .abut-detail p {
-    text-indent: 20px;
+   
     line-height: 28px;
     margin-bottom: 15px; }
 
-/* =================== Header Style Starts Here =================== */
+ .about-pic{
+      width: 100%;
+      height: 75%;
+      object-fit: contain;
+    }
+
+/* =================== Header Style Starts Here =================== 888*/
 .services {
   padding: 50px;
-  background-color: #FFF; }
+  background-color: #FFF; 
+}
+.services h4{ 
+  text-align: center;
+}
   @media screen and (max-width: 940px) {
     .services {
       padding: 30px 10px; } }
   .services .service-row .servic-col {
-    text-align: center; }
+    text-align: justify; }
     .services .service-row .servic-col .servic-round {
       width: 90px;
       height: 90px;
+      text-align: center;
       background-color:#42b773;
       color: #FFF;
       float: none;
@@ -872,8 +874,9 @@ header .headwe-nav {
     float: right;
     font-weight: 600;
     font-size: .8rem; }
+
   .causes .cuses-row .caus-detail {
-    text-align: center;
+    text-align: justify; 
     margin-top: 20px; }
     .causes .cuses-row .caus-detail h4 {
       font-size: 1.2rem; }
@@ -903,7 +906,7 @@ header .headwe-nav {
     margin-bottom: 20px; }
     .upcomming .events-row .event-card .event-detail {
       padding: 20px;
-      text-align: center; }
+      text-align: justify; }
       .upcomming .events-row .event-card .event-detail h6 {
         margin-top: 20px;
         font-size: 1.2rem; }
@@ -1065,6 +1068,12 @@ header .headwe-nav {
    
   padding-bottom: 10px;
   
+}
+.footer-link{
+  color:white;
+}
+.footer-link:hover{
+  color: #42b773;
 }
 .row-two h3{
 
