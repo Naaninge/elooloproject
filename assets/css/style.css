@@ -1119,3 +1119,10 @@ header .headwe-nav {
     border-right: 0px; } }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Edit */
+.image{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
